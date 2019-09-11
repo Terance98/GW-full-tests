@@ -2,12 +2,15 @@ const { I } = inject();
 
 module.exports = {
   fields: {
-    name: 'name',
-    description: 'description'
+    name: {name:'name'},
+    description: {name:'description'}
   },
   create(name, description) {
     I.amOnPage('/marketplaces');
+    I.wait(2);
+    // pause();
     I.click('Create Market');
+    I.wait(3);
     I.fillField(this.fields.name, name);
     I.fillField(this.fields.description, description);
     I.click('Save Market');

@@ -33,8 +33,12 @@ module.exports = {
 
   finish(name) {
     I.click('Save Asset');
-    I.see("Asset Type successfully created! Redirecting...");
+    I.wait(1);
+    // I.see("Asset Type successfully created! Redirecting...");
+    I.see("Asset Type successfully created!");
+    I.wait(2);
     I.amOnPage('/asset-types');
+    I.wait(3);
     I.see(name);
   },
 

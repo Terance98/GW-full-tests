@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository contains all the test codes.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,17 @@
   "dependencies": {
     "codeceptjs": "^2.3.0",
     "puppeteer": "^1.19.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terance98/GW-full-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Terance98/GW-full-tests/issues"
+  },
+  "homepage": "https://github.com/Terance98/GW-full-tests#readme"
 }

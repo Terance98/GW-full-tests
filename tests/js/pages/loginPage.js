@@ -10,8 +10,10 @@ module.exports = {
     I.see('greyWing');
     I.fillField(this.fields.email, email);
     I.fillField(this.fields.password, password);
-    I.pressKey('Enter');
-    I.seeElementInDOM('#loggedIn');
+    // I.pressKey('Enter');
+    I.click("Sign in");
+    I.wait(3);
+    // I.seeElementInDOM('#loggedIn');
   },
   logout() {
     I.click('Logout');
