@@ -30,7 +30,7 @@ Data(accounts).Scenario('Successful Login and Access Check', (I, current, loginP
 
 Data(marketplaces).Scenario('Creating Marketplaces and check Listing', (I, current, loginPage, marketplacePage) => {
     let firstAdmin = data.users.data.filter(user => user[2] === 'Admin')[0];
-    console.log(current, firstAdmin);
+    // console.log(current, firstAdmin);
     loginPage.login(firstAdmin[0], firstAdmin[1]);
     marketplacePage.create(current.name, current.description);    
 })
