@@ -9,7 +9,7 @@
   "author": "Thomas Terance",
   "license": "ISC",
   "dependencies": {
-    "codeceptjs": "^2.3.0",
+    "codeceptjs": "^3.0.0",
     "puppeteer": "^1.19.0"
   },
   "directories": {
